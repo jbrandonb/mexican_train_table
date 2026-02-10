@@ -1,0 +1,20 @@
+{
+  "name": "mexican_train_table",
+  "version": "1.0.0",
+  "description": "Table simulator for mexican train!",
+  "homepage": "https://github.com/jbrandonb/mexican_train_table#readme",
+  "bugs": {
+    "url": "https://github.com/jbrandonb/mexican_train_table/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbrandonb/mexican_train_table.git"
+  },
+  "license": "GPL-3.0-or-later",
+  "author": "James Beene",
+  "type": "react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
