@@ -1,14 +1,20 @@
-import { Text, View } from "react-native";
+import { Text, View, Pressable } from "react-native";
 
 export default function TabIndex() {
   return (
+    //Home Header
     <View style={{
       flex: 1,
-      justifyContent: "center",
       alignItems: "center"
     }}
     >
-      <Text style={{ fontSize: 24 }}>Welcome to MexTrain Table!</Text>
+      <Text style={{
+        fontSize: 28,
+        fontWeight: "700",
+        marginTop: 24
+      }}>
+        Welcome to MexTrain Table!
+      </Text>
     </View>
   );
 }
