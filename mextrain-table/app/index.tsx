@@ -1,4 +1,5 @@
-import { Text, View, Pressable, StyleSheet } from "react-native";
+import { Text, View, Pressable } from "react-native";
+import { styles } from ""
 
 export default function TabIndex() {
   return (
@@ -22,25 +23,4 @@ export default function TabIndex() {
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  header: {
-    fontSize: 24,
-    marginTop: 20,
-    marginBottom: 20,
-  },
-  button: {
-    backgroundColor: "#4CAF50",
-    padding: 12,
-    borderRadius: 8,
-  },
-  buttonText: {
-    color: "white",
-    fontWeight: "bold",
-  },
-});
 
