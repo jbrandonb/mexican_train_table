@@ -1,5 +1,5 @@
 import { Text, View, Pressable } from "react-native";
-import { styles } from ""
+import { styles } from "../theme/styles"
 
 export default function TabIndex() {
   return (
@@ -14,7 +14,9 @@ export default function TabIndex() {
 
       <View style={styles.container}>
         <Pressable style={styles.button}>
-
+          <Text style={styles.buttonText}>
+            Start Game
+          </Text>
         </Pressable>
       </View>
 
