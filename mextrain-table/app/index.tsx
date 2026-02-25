@@ -13,11 +13,26 @@ export default function TabIndex() {
       </Text>
 
       <View style={styles.container}>
-        <Pressable style={styles.button}>
+        <Pressable
+          onPressIn={() => console.log("IN")}
+          onPressOut={() => console.log("OUT")}
+          style={({ pressed }) => [
+            styles.button,
+            pressed && styles.buttonPressed
+          ]}>
           <Text style={styles.buttonText}>
             Start Game
           </Text>
         </Pressable>
+        <Pressable style={({ pressed }) => [
+          styles.button,
+          pressed && styles.buttonPressed
+        ]}>
+          <Text style={styles.buttonText}>
+            Settings
+          </Text>
+        </Pressable>
+
       </View>
 
     </View>

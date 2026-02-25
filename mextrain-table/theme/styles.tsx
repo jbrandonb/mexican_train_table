@@ -12,13 +12,19 @@ export const styles = StyleSheet.create({
 		marginBottom: 20,
 	},
 	button: {
-		backgroundColor: "#4CAF50",
+		backgroundColor: "orange",
 		padding: 12,
+		margin: 10,
 		borderRadius: 8,
 	},
 	buttonText: {
-		color: "white",
+		fontSize: 30,
+		color: "black",
 		fontWeight: "bold",
 	},
+	buttonPressed: {
+		backgroundColor: "darkorange",
+		transform: [{ scale: 0.95 }],
+	}
 });
 
