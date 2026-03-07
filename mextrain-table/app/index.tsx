@@ -1,21 +1,18 @@
 import { Text, View, Pressable } from "react-native";
+import { router } from "expo-router";
 import { styles } from "../theme/styles"
 
 export default function TabIndex() {
   return (
     //Home Header
-    <View style={{
-      flex: 1,
-      alignItems: "center"
-    }}>
+    <View style={styles.container}>
       <Text style={styles.header}>
         Welcome to MexTrain Table!
       </Text>
 
       <View style={styles.container}>
         <Pressable
-          onPressIn={() => console.log("IN")}
-          onPressOut={() => console.log("OUT")}
+          onPress={() => router.push("/table")}
           style={({ pressed }) => [
             styles.button,
             pressed && styles.buttonPressed
@@ -24,10 +21,13 @@ export default function TabIndex() {
             Start Game
           </Text>
         </Pressable>
-        <Pressable style={({ pressed }) => [
-          styles.button,
-          pressed && styles.buttonPressed
-        ]}>
+
+        <Pressable
+          onPress={() => router.push("/settings")}
+          style={({ pressed }) => [
+            styles.button,
+            pressed && styles.buttonPressed
+          ]}>
           <Text style={styles.buttonText}>
             Settings
           </Text>

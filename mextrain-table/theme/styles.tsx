@@ -11,6 +11,12 @@ export const styles = StyleSheet.create({
 		marginTop: 20,
 		marginBottom: 20,
 	},
+	text: {
+		fontSize: 16,
+		color: "black",
+		marginVertical: 12,
+	},
+
 	button: {
 		backgroundColor: "orange",
 		padding: 12,
